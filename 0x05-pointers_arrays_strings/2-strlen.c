@@ -2,18 +2,16 @@
 
 /**
  * _strlen - returns the length of a string
- * @a: string
- * Return: length
+ * @s: pointer type  char
+ * Return: the program will return the number of characters of *s (the length)
  */
 int _strlen(char *s)
 {
-	int len = 0;
+	int i;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != 00; i++)
 	{
-		len++;
-		s++;
 	}
 
-	return (len);
+	return (i);
 }
